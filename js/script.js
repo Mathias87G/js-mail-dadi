@@ -33,28 +33,23 @@
 // 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
 var lancioUtente = Math.floor(Math.random()*6) + 1;
-console.log(lancioUtente);
 alert("Il tuo lancio di dadi ha dato come esito: " + lancioUtente);
 document.getElementById('lancio_utente').innerHTML = lancioUtente
 
 var lancioPC = Math.floor(Math.random()*6) + 1;
-console.log(lancioPC);
 alert("Il lancio di dadi del banco ha dato come esito: " + lancioPC);
 document.getElementById('lancio_pc').innerHTML = lancioPC
 
 if (lancioUtente > lancioPC) {
-  console.log("Hai vinto!");
   document.getElementById('esito').innerHTML = "Hai vinto!"
   document.getElementById('lancio_utente').style.color = "blue"
   document.getElementById('esito').style.color = "green"
 
 } else if (lancioPC > lancioUtente) {
-  console.log("Hai perso, ritenta!");
   document.getElementById('esito').innerHTML = "Hai perso, ritenta!"
-    document.getElementById('lancio_pc').style.color = "blue"
+  document.getElementById('lancio_pc').style.color = "blue"
   document.getElementById('esito').style.color = "red"
 } else {
-  console.log("Pareggio");
   document.getElementById('esito').innerHTML = "Pareggio"
-    document.getElementById('esito').style.color = "yellow"
+  document.getElementById('esito').style.color = "yellow"
 }
