@@ -34,22 +34,22 @@
 
 var lancioUtente = Math.floor(Math.random()*6) + 1;
 alert("Il tuo lancio di dadi ha dato come esito: " + lancioUtente);
-document.getElementById('lancio_utente').innerHTML = lancioUtente
+document.getElementById('lancio_utente').innerHTML = lancioUtente;
 
 var lancioPC = Math.floor(Math.random()*6) + 1;
 alert("Il lancio di dadi del banco ha dato come esito: " + lancioPC);
-document.getElementById('lancio_pc').innerHTML = lancioPC
+document.getElementById('lancio_pc').innerHTML = lancioPC;
 
 if (lancioUtente > lancioPC) {
-  document.getElementById('esito').innerHTML = "Hai vinto!"
-  document.getElementById('lancio_utente').style.color = "blue"
-  document.getElementById('esito').style.color = "green"
+  document.getElementById('esito').innerHTML = "Hai vinto!";
+  document.getElementById('lancio_utente').style.color = "blue";
+  document.getElementById('esito').style.color = "green";
 
 } else if (lancioPC > lancioUtente) {
-  document.getElementById('esito').innerHTML = "Hai perso, ritenta!"
-  document.getElementById('lancio_pc').style.color = "blue"
-  document.getElementById('esito').style.color = "red"
+  document.getElementById('esito').innerHTML = "Hai perso, ritenta!";
+  document.getElementById('lancio_pc').style.color = "blue";
+  document.getElementById('esito').style.color = "red";
 } else {
-  document.getElementById('esito').innerHTML = "Pareggio"
-  document.getElementById('esito').style.color = "yellow"
+  document.getElementById('esito').innerHTML = "Pareggio";
+  document.getElementById('esito').style.color = "yellow";
 }
