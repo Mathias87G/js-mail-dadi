@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: 'Rubik', sans-serif;
+}
+/* header */
+
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: lightgrey;
+}
+
+#logo {
+  height: 70px;
+  padding-right: 20px;
+}
+
+.casino {
+  font-size: 40px;
+  font-weight: bold;
+  color: #1e3f5b;
+}
+
+/* section game */
+
+.game {
+  background-color: lightgreen;
+}
+
+.game-card_ctr {
+  display: flex;
+  justify-content: space-around;
+}
+
+.game-card {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#dices {
+  height: 150px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.card-text {
+  padding: 20px 0;
+}
+
+ #lancio_pc, #lancio_utente {
+  font-size: 40px;
+  height: 70px;
+}
+
+/* section result */
+
+.result {
+  height: calc(100vh - 370px);
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#esito {
+  font-size: 100px;
+  font-weight: bolder;
+}

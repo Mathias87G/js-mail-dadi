@@ -3,11 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
     <title></title>
   </head>
   <body>
+
+    <div class="container">
+      <header>
+        <img id="logo" src="https://www.boolean.careers/images/common/logo.png" alt="Logo">
+        <span class="casino">casinò</span>
+      </header>
+      <section class="game">
+        <div class="game-card_ctr">
+          <div class="game-card">
+            <img id="dices" src="https://cdn.pixabay.com/photo/2015/03/25/23/46/cube-689619_960_720.jpg" alt="dadi">
+            <div class="card-text">Il tuo punteggio è: </div>
+            <div id="lancio_utente"></div>
+          </div>
+          <div class="game-card">
+            <img id="dices" src="https://cdn.pixabay.com/photo/2015/03/25/23/46/cube-689619_960_720.jpg" alt="dadi">
+            <div class="card-text">Il punteggio del banco è: </div>
+            <div id="lancio_pc"></div>
+          </div>
+        </div>
+      </section>
+      <section class="result">
+        <div id="esito"></div>
+      </section>
+
+
+    </div>
 
     <script src="js/script.js" charset="utf-8"></script>
   </body>
