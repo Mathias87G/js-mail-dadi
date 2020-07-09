@@ -10,9 +10,11 @@ for (var i = 0; i < mail.length; i++) {
   }
 }
 
-if (control == true) {
+if (control) {
   alert("Accesso consentito");
+  console.log("Accesso consentito");
  }
 else {
   alert("Accesso negato");
+  console.log("Accesso negato");
 }
